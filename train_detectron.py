@@ -38,5 +38,6 @@ if __name__ == "__main__":
     data_dir = args.data_dir
     output_dir = args.output_dir
     device = args.device
+    util.show_Od(output_dir, data_dir, class_list_file, device=device)
+#     util.train(output_dir, data_dir, class_list_file, device=device)
 
-    util.train(output_dir, data_dir, class_list_file, device=device)
